@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aion Eternum</title>
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Righteous&display=swap'>
+    <style type="text/css">
+        *,
+        body {
+            padding: 0px;
+            border: 0px;
+            margin: 0px;
+        }
+
+        h1 {
+            background-color: #fff;
+        }
+
+        header {
+            background-color: #fff;
+            height: 12vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-top: 5px;
+            font-size: 48px;
+            font-family: 'Righteous', cursive;
+            text-shadow: 0px 2px 10px;
+        }
+
+        header:hover {
+            background: linear-gradient(45deg, white, rgb(182, 182, 182), grey, rgb(182, 182, 182), rgb(255, 255, 255));
+            height: 12vh;
+            border: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-top: 5px;
+            cursor: pointer;
+            color: rgb(58, 58, 58);
+            box-shadow: 0px 10px 20px rgb(0, 0, 0);
+            transition: all 1s ease;
+            -webkit-transition-delay: all 1s ease;
+            -moz-transition-delay: all 1s ease;
+            -ms-transition-delay: all 1s ease;
+            -o-transition-delay: all 1s ease;
+        }
+
+        #BL {
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            display: flex;
+            padding-top: 20px;
+            margin-left: -20px;
+            text-decoration: none;
+        }
+
+        #BL:hover {
+            text-shadow: 0px 0px 2px rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            transition: all 1s ease;
+            -webkit-transition-delay: all 1s ease;
+            -moz-transition-delay: all 1s ease;
+            -ms-transition-delay: all 1s ease;
+            -o-transition-delay: all 1s ease;
+        }
+
+        #BIP {
+            color: rgb(0, 0, 0);
+            padding-top: 20px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        #BIP:hover {
+            text-shadow: 0px 0px 2px rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            transition: all 1s ease;
+            -webkit-transition-delay: all 1s ease;
+            -moz-transition-delay: all 1s ease;
+            -ms-transition-delay: all 1s ease;
+            -o-transition-delay: all 1s ease;
+        }
+
+        #nomeSite {
+            color: black;
+            text-decoration: none;
+            margin-left: -120px;
+            font-size: 80px;
+        }
+
+        #nomeSite:hover {
+            text-shadow: 0px 0px 2px rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            transition: all 1s ease;
+            -webkit-transition-delay: all 1s ease;
+            -moz-transition-delay: all 1s ease;
+            -ms-transition-delay: all 1s ease;
+            -o-transition-delay: all 1s ease;
+        }
+
+        #paidetodos {
+            display: block;
+            height: 84vh;
+            overflow: auto;
+        }
+
+        #acessos {
+            text-align: center;
+            display: block;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 95%;
+            margin: 20px;
+            margin-right: 10px;
+            margin-right: -10px;
+            color: white;
+            padding-top: 150px;
+        }
+
+        .all {
+            border: 2px solid rgb(255, 255, 255);
+            box-shadow: 0px 0px 10px black;
+            width: 32.5%;
+            height: 20vh;
+            margin-bottom: 10px;
+            font-size: 35px;
+            background-color: rgb(0, 0, 0);
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        .all:hover {
+            box-shadow: 0px 0px 25px rgb(255, 255, 255);
+            text-shadow: 0px 0px 10px rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            border: 2px solid black;
+            color: rgb(0, 0, 0);
+            transition: all 1s ease;
+            -webkit-transition-delay: all 1s ease;
+            -moz-transition-delay: all 1s ease;
+            -ms-transition-delay: all 1s ease;
+            -o-transition-delay: all 1s ease;
+        }
+
+        div button {
+            justify-content: center;
+        }
+
+        #principal {
+            background-image: url("https://cdn.shopify.com/s/files/1/0258/6727/products/Greek-Key-Black_1024x1024.gif?v=1583107412");
+            height: 83vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Righteous', cursive;
+            font-size: 30px;
+            display: block;
+            margin: auto;
+        }
+
+        .all a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .all a:hover {
+            color: rgb(61, 72, 228);
+        }
+
+
+        #rodape {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+            height: 28px;
+            border-top: 1px solid rgb(128, 128, 128);
+            box-shadow: 0px -1px 2px grey;
+            font-family: 'Righteous', cursive;
+            text-shadow: 0px 2px 10px;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+        }
+
+        #rodape:hover {
+            background: linear-gradient(45deg, white, rgb(182, 182, 182), grey, rgb(182, 182, 182), rgb(255, 255, 255));
+            display: flex;
+            justify-content: center;
+            text-shadow: 0px 2px 10px white;
+            cursor: pointer;
+            color: rgb(58, 58, 58);
+            box-shadow: 0px -15px 20px;
+            transition: all 1s ease;
+            -webkit-transition-delay: all 1s ease;
+            -moz-transition-delay: all 1s ease;
+            -ms-transition-delay: all 1s ease;
+            -o-transition-delay: all 1s ease;
+        }
+
+        #texto {
+            margin-right: 60px;
+            margin-left: 60px;
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 12px;
+            background-color: rgba(0, 0, 0);
+            color: rgb(17, 17, 17);
+            cursor: pointer;
+            text-shadow: 0px 0px 10px rgb(59, 59, 59);
+            border: 2px solid white;
+        }
+
+        h1{
+          border-radius: 12px;
+          border: 2px solid black;
+        }
+
+        h1:hover {
+            box-shadow: 0px 0px 10px white;
+            color: black;
+            text-shadow: 0px 0px 3px black;
+            transition: all 1s ease;
+            -webkit-transition-delay: all 1s ease;
+            -moz-transition-delay: all 1s ease;
+            -ms-transition-delay: all 1s ease;
+            -o-transition-delay: all 1s ease;
+        }
+
+        #texto:hover {
+            box-shadow: 0px 0px 50px rgb(255, 255, 255);
+            text-shadow: 0px 0px 10px rgb(255, 255, 255);
+            color: white;
+            transition: all 1s ease;
+            -webkit-transition-delay: all 1s ease;
+            -moz-transition-delay: all 1s ease;
+            -ms-transition-delay: all 1s ease;
+            -o-transition-delay: all 1s ease;
+        }
+
+        .red:hover{
+            color: red
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <a id="BL" href="Eternumlocal.html">Busca Por Localidade</a>
+        <a id="nomeSite" href="index.html">Aion Eternum</a>
+        <a id="BIP" href="EternumIP.html">Busca Por IP</a>
+    </header>
+    <main>
+        <div id="principal">
+            <div id="acessos">
+                <div id="texto">
+                    <h1 align="center" id="sobre" onmouseover="eu()" onmouseout="sobre()">Veja Além do Que os Olhos Permitem...</h1><br>Eu sou
+                    ?????????(#dica: Leia Atentamente, o mouse pode ajudar!), criador e idealizador do Aion Eternum, que advém do Latim, "Eu Sou
+                    Eterno". Sou uma pessoa em busca de con<p style="display:inline"class="red">h</p>eciment<p style="display:inline" class="red">o</p> para aplicar em conjunto com minha empresa
+                    em busca de contribuir com a sociedade com o esforço do meu trabalho junto da minha empresa e
+                    colegas de ser<p class="red" style="display:inline">v</p>iço.
+                    <br><p class="red" style="display:inline">E</p>stou studando de Desenvolvimento Web pela Faculdade Iv2 e sou Estudante de Tecnologia pela Faculdade de Tecnologia de Jundiaí e , semp<p class="red" style="display:inline">r</p>e buscando novos meios e técnicas de aprimorar o meu
+                    serviço, e compartilhando conhecimento com meus colegas e amigos.
+                    <br>No futuro eu almejo ser uma pessoas com quem os outros possam contar quando buscarem por
+                    informação, passando todo o conhecimento adquirido ao longo dos anos para as gerações futuras.
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="Eternumabout.html" id="rodape" onmouseover="cookieno()" onmouseout="aboutback()">About</a>
+    </footer>
+    <script>
+        function eu() {
+            document.getElementById("sobre").innerHTML = "Otávio Barros"
+        }
+
+        function sobre() {
+            document.getElementById("sobre").innerHTML = "Veja Além do Que os Olhos Permitem..."
+        }
+
+        function cookieno() {
+            document.getElementById("rodape").innerHTML = "Este Site não Utiliza Cookies!"
+        }
+
+        function aboutback() {
+            document.getElementById("rodape").innerHTML = "About"
+        }
+    </script>
+</body>
+
+</html>
